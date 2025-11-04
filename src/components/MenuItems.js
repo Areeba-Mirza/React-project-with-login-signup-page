@@ -24,10 +24,15 @@ export const MenuItems = [
         icon: "fa-solid fa-address-book"
     },
     {
-        title: "Sign Up",
-        url: "/",
-        Cname: "nav-links-mobile",
-        
+        title: "Login",
+        url: "/login",
+        Cname: "nav-links",
+        icon: "fa-solid fa-right-to-bracket"  // example icon for login
     },
-
-]
+    {
+        title: "Sign Up",
+        url: "/signup",
+        Cname: "nav-links",
+        icon: "fa-solid fa-user-plus"  // example icon for signup
+    }
+];

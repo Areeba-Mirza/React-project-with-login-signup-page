@@ -1,0 +1,140 @@
+/* Background and overall page */
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('c:\Users\AB LaptopS\Pictures\bkg1.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/* Transparent containers */
+.container {
+  flex: 1;
+  margin: 40px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Left container - login form */
+.left-container {
+  backdrop-filter: blur(10px);
+}
+
+/* Form styles */
+.login-form {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.login-form label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+  box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.7);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 8px;
+  font-size: 0.9em;
+}
+
+.remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Login button */
+.btn-login {
+  background-color: #ffffffcc;
+  color: #222;
+  font-weight: bold;
+  padding: 12px 0;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.btn-login:hover {
+  background-color: #ffffffee;
+}
+
+/* Forgot password link */
+.forgot-password {
+  margin-top: 12px;
+  text-align: right;
+  font-size: 0.89em;
+  color: #ddd;
+  text-decoration: none;
+  user-select: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Right container - quote */
+.right-container {
+  backdrop-filter: blur(10px);
+  padding: 40px;
+}
+
+.quote-text {
+  font-weight: 700;
+  font-size: 2.0rem;
+  text-align: center;
+  line-height: 1.3;
+  user-select: none;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+  .container {
+    margin: 20px;
+    width: auto;
+  }
+  .right-container {
+    order: -1;
+  }
+}
